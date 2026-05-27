@@ -10,12 +10,14 @@ const options = [
 export default function HomePage() {
   return (
     <>
-      <section className="hero">
-        <h1>あなたに合う出会い方診断</h1>
-        <p className="lead">「どこで出会えばいいか分からない」「アプリが向いているか不安」などの気持ちを、質問形式で整理するためのサイトです。未来を断定するのではなく、あなたの傾向に合った選択肢を見つける補助として活用できます。</p>
-        <div className="btn-row">
-          <Link href="/diagnosis" className="btn btn-primary">診断をはじめる</Link>
-          <Link href="/matching-apps" className="btn btn-secondary">アプリ前の整理を見る</Link>
+      <section className="hero" aria-labelledby="top-hero-title">
+        <div className="hero-inner">
+          <h1 id="top-hero-title">あなたに合う出会い方診断</h1>
+          <p className="lead">「どこで出会えばいいか分からない」「アプリが向いているか不安」などの気持ちを、質問形式で整理するためのサイトです。未来を断定するのではなく、あなたの傾向に合った選択肢を見つける補助として活用できます。</p>
+          <div className="btn-row">
+            <Link href="/diagnosis" className="btn btn-primary">診断をはじめる</Link>
+            <Link href="/matching-apps" className="btn btn-secondary">アプリ前の整理を見る</Link>
+          </div>
         </div>
       </section>
 
