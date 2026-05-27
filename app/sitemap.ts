@@ -1,11 +1,11 @@
 import type { MetadataRoute } from 'next';
 
-const baseUrl = 'https://example.com';
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://deai-style-diagnosis-site.vercel.app';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const routes = ['', '/diagnosis', '/matching-apps', '/articles', '/fortune', '/privacy', '/terms', '/contact', '/advertising'];
   return routes.map((route) => ({
-    url: `${baseUrl}${route}`,
+    url: `${siteUrl}${route}`,
     lastModified: new Date(),
   }));
 }
