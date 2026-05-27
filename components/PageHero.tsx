@@ -26,7 +26,7 @@ export default function PageHero({
       <div className="page-hero__bg" aria-hidden="true" />
       <div className="page-hero__overlay" aria-hidden="true" />
       <div className="page-hero__inner">
-        <div className="page-hero__card">
+        <div className="page-hero__content">
           <h1>{title}</h1>
           {subtitle ? <p className="lead">{subtitle}</p> : null}
           {children}
