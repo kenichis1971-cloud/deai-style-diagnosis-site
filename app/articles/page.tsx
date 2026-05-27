@@ -1,3 +1,5 @@
+import PageHero from '@/components/PageHero';
+
 const drafts = [
   'アプリが不安なときに最初に整理したい3つの視点',
   '自然な出会いにこだわる前に確認したいこと',
@@ -6,8 +8,12 @@ const drafts = [
 
 export default function ArticlesPage() {
   return (
-    <section>
-      <h1>読みもの一覧</h1>
+    <>
+      <PageHero
+        title="読みもの一覧"
+        subtitle="出会い方の整理に役立つ読みものを、順次公開予定です。"
+        variant="articles"
+      />
       <div className="grid section">
         {drafts.map((title) => (
           <article className="card" key={title}>
@@ -16,6 +22,6 @@ export default function ArticlesPage() {
           </article>
         ))}
       </div>
-    </section>
+    </>
   );
 }

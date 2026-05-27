@@ -42,3 +42,59 @@ a { color: inherit; text-decoration: none; }
   .hero { padding:20px; }
   .header-inner { align-items:flex-start; flex-direction:column; }
 }
+
+
+.page-hero {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  min-height: 280px;
+  padding: 28px;
+  background: linear-gradient(120deg, #fff5f4 0%, #ffeef3 48%, #f5f6ff 100%);
+  box-shadow: 0 10px 22px rgba(243, 166, 170, 0.16);
+}
+
+.page-hero__overlay {
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(circle at 12% 20%, rgba(255, 255, 255, 0.68) 0, rgba(255, 255, 255, 0) 40%),
+    radial-gradient(circle at 88% 78%, rgba(255, 255, 255, 0.4) 0, rgba(255, 255, 255, 0) 46%);
+  pointer-events: none;
+}
+
+.page-hero__content {
+  position: relative;
+  z-index: 1;
+  max-width: 780px;
+}
+
+.page-hero h1 { margin: 0 0 12px; font-size: clamp(26px, 4vw, 42px); }
+
+.page-hero--home {
+  background: linear-gradient(120deg, #fff4f2 0%, #ffe8ef 44%, #edf4ff 100%);
+}
+
+.page-hero--diagnosis {
+  background: linear-gradient(120deg, #fff7f2 0%, #fff0e8 44%, #f2f7ff 100%);
+}
+
+.page-hero--matching-apps {
+  background: linear-gradient(120deg, #fffaf2 0%, #fff1f5 44%, #eef7ff 100%);
+}
+
+.page-hero--articles {
+  background: linear-gradient(120deg, #fdf7ff 0%, #fff4f4 44%, #f1f8ff 100%);
+}
+
+.page-hero--fortune {
+  background: linear-gradient(120deg, #fdf5ff 0%, #fff0f7 44%, #edf8ff 100%);
+}
+
+@media (max-width: 640px){
+  .page-hero {
+    min-height: 220px;
+    padding: 20px;
+  }
+}

@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import PageHero from '@/components/PageHero';
 
 const options = [
   { title: 'マッチングアプリ', text: '忙しい中でも出会いの機会を持ちたい人向けの選択肢。' },
@@ -10,14 +11,16 @@ const options = [
 export default function HomePage() {
   return (
     <>
-      <section className="hero">
-        <h1>あなたに合う出会い方診断</h1>
-        <p className="lead">「どこで出会えばいいか分からない」「アプリが向いているか不安」などの気持ちを、質問形式で整理するためのサイトです。未来を断定するのではなく、あなたの傾向に合った選択肢を見つける補助として活用できます。</p>
+      <PageHero
+        title="あなたに合う出会い方診断"
+        subtitle="「どこで出会えばいいか分からない」「アプリが向いているか不安」などの気持ちを、質問形式で整理するためのサイトです。未来を断定するのではなく、あなたの傾向に合った選択肢を見つける補助として活用できます。"
+        variant="home"
+      >
         <div className="btn-row">
           <Link href="/diagnosis" className="btn btn-primary">診断をはじめる</Link>
           <Link href="/matching-apps" className="btn btn-secondary">アプリ前の整理を見る</Link>
         </div>
-      </section>
+      </PageHero>
 
       <section className="section">
         <h2>このサイトでできること</h2>
