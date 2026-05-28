@@ -44,7 +44,7 @@ export default function HomePage() {
 
       <section className="section card">
         <h2>将来的なご案内（準備枠）</h2>
-        <p className="lead">今後は、比較情報・読みもの・相談準備などの情報を追加予定です。現時点では外部サービスへのリンクは設置していません。</p>
+        <p className="lead">今後は、比較情報・コラム・相談準備などの情報を追加予定です。現時点では外部サービスへのリンクは設置していません。</p>
       </section>
     </>
   );

@@ -8,7 +8,7 @@ export function Footer() {
           <Link href="/">トップ</Link>
           <Link href="/diagnosis">診断</Link>
           <Link href="/matching-apps">アプリ整理</Link>
-          <Link href="/articles">読みもの</Link>
+          <Link href="/articles">コラム</Link>
           <Link href="/fortune">気持ち整理</Link>
           <Link href="/privacy">プライバシー</Link>
           <Link href="/terms">利用規約</Link>

@@ -3,7 +3,7 @@ import Link from 'next/link';
 const links = [
   { href: '/diagnosis', label: '診断' },
   { href: '/matching-apps', label: 'アプリ整理' },
-  { href: '/articles', label: '読みもの' },
+  { href: '/articles', label: 'コラム' },
   { href: '/fortune', label: '気持ち整理' },
 ];
 
