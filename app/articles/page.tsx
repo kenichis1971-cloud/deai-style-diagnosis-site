@@ -12,6 +12,11 @@ const publishedArticles = [
     title: 'マッチングアプリを始める前に整理したいこと',
     description: 'アプリを使う前に、目的や距離感、安全面をやさしく整理するコラム。',
   },
+  {
+    href: '/articles/when-natural-meetings-feel-rare',
+    title: '自然な出会いが少ないと感じたときに考えたいこと',
+    description: '生活圏や気持ちを見直しながら、無理のない出会い方を考えるコラム。',
+  },
 ];
 
 export default function ArticlesPage() {

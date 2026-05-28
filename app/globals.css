@@ -136,6 +136,13 @@ a { color: inherit; text-decoration: none; }
     linear-gradient(180deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.3));
 }
 
+
+.article-hero-when-natural-meetings-feel-rare {
+  background-image:
+    linear-gradient(120deg, rgba(255, 252, 250, 0.93), rgba(228, 239, 250, 0.82)),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.3));
+}
+
 .article-content {
   width: min(760px, 92%);
   margin-left: auto;
