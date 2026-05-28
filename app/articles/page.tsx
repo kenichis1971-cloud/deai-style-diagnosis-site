@@ -8,6 +8,11 @@ const drafts = [
 
 const publishedArticles = [
   {
+    href: '/articles/how-to-choose-your-meeting-style',
+    title: '出会い方に迷ったとき、自分に合う選び方',
+    description: 'アプリ・紹介・コミュニティなどを比べながら、無理なく続けやすい出会い方を考えるコラム。',
+  },
+  {
     href: '/articles/before-starting-matching-apps',
     title: 'マッチングアプリを始める前に整理したいこと',
     description: 'アプリを使う前に、目的や距離感、安全面をやさしく整理するコラム。',
