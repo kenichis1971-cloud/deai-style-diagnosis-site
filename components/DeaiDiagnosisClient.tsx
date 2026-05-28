@@ -6,7 +6,7 @@ import { calculateDiagnosisResult, diagnosisQuestions, type DiagnosisTypeId } fr
 
 const resultLinks = [
   { href: "/matching-apps", label: "アプリを使う前に整理する" },
-  { href: "/articles", label: "読みものを見る" },
+  { href: "/articles", label: "コラムを見る" },
   { href: "/fortune", label: "気持ちを整理する" },
   { href: "/", label: "トップに戻る" },
 ];
