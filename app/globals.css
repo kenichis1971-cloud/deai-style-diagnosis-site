@@ -48,6 +48,24 @@ a { color: inherit; text-decoration: none; }
     linear-gradient(180deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.24));
 }
 
+.matching-apps-hero {
+  background-image:
+    linear-gradient(120deg, rgba(255, 252, 250, 0.92), rgba(245, 226, 236, 0.78)),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.22), rgba(255, 255, 255, 0.26));
+}
+
+.articles-hero {
+  background-image:
+    linear-gradient(120deg, rgba(255, 252, 250, 0.92), rgba(233, 236, 252, 0.78)),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.22), rgba(255, 255, 255, 0.26));
+}
+
+.fortune-hero {
+  background-image:
+    linear-gradient(120deg, rgba(255, 252, 250, 0.92), rgba(241, 232, 251, 0.78)),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.22), rgba(255, 255, 255, 0.26));
+}
+
 .diagnosis-hero-inner {
   padding: clamp(42px, 8vw, 98px) 0;
 }
