@@ -1,7 +1,17 @@
+import Link from 'next/link';
+
 const drafts = [
   'アプリが不安なときに最初に整理したい3つの視点',
   '自然な出会いにこだわる前に確認したいこと',
   '出会い方を選ぶときのペース設計メモ'
+];
+
+const publishedArticles = [
+  {
+    href: '/articles/before-starting-matching-apps',
+    title: 'マッチングアプリを始める前に整理したいこと',
+    description: 'アプリを使う前に、目的や距離感、安全面をやさしく整理するコラム。',
+  },
 ];
 
 export default function ArticlesPage() {
@@ -17,6 +27,15 @@ export default function ArticlesPage() {
       <section className="section">
         <h2>コラム一覧</h2>
         <div className="grid section">
+          {publishedArticles.map((article) => (
+            <article className="card" key={article.href}>
+              <h3>{article.title}</h3>
+              <p>{article.description}</p>
+              <div className="btn-row">
+                <Link className="btn btn-secondary" href={article.href}>コラムを読む</Link>
+              </div>
+            </article>
+          ))}
           {drafts.map((title) => (
             <article className="card" key={title}>
               <h3>{title}</h3>
