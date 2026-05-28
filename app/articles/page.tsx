@@ -17,6 +17,11 @@ const publishedArticles = [
     title: '自然な出会いが少ないと感じたときに考えたいこと',
     description: '生活圏や気持ちを見直しながら、無理のない出会い方を考えるコラム。',
   },
+  {
+    href: '/articles/how-to-think-about-introductions',
+    title: '紹介で出会うときに無理をしない考え方',
+    description: '紹介の安心感と気を遣いやすさを整理しながら、無理のない向き合い方を考えるコラム。',
+  },
 ];
 
 export default function ArticlesPage() {
