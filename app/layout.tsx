@@ -9,6 +9,9 @@ export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: 'あなたに合う出会い方診断',
   description: '恋愛や婚活で、自分に合う出会い方を整理するための診断サイト。',
+  verification: {
+    google: 'Me0ruJV9U6oJJHoxk7hLGJqDRffZZfieF0HsofoInSU',
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
