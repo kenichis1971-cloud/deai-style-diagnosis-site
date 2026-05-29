@@ -8,6 +8,11 @@ const drafts = [
 
 const publishedArticles = [
   {
+    href: '/articles/when-you-feel-tired-of-meeting-people',
+    title: '出会いに疲れたとき、少しペースを整える考え方',
+    description: '出会い探しに疲れたとき、自分の気持ちやペースをやさしく整えるコラム。',
+  },
+  {
     href: '/articles/how-to-choose-your-meeting-style',
     title: '出会い方に迷ったとき、自分に合う選び方',
     description: 'アプリ・紹介・コミュニティなどを比べながら、無理なく続けやすい出会い方を考えるコラム。',
