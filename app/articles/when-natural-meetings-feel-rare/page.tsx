@@ -12,7 +12,7 @@ export default function WhenNaturalMeetingsFeelRarePage() {
       <section className="hero article-hero article-hero-when-natural-meetings-feel-rare" aria-labelledby="article-when-natural-meetings-feel-rare-title">
         <div className="hero-inner">
           <h1 id="article-when-natural-meetings-feel-rare-title">自然な出会いが少ないと感じたときに考えたいこと</h1>
-          <p className="lead">年齢や生活環境の変化によって、自然な出会いが少なく感じられる時期は珍しくありません。このコラムは、焦って結論を出すためではなく、いまの生活圏や気持ちを落ち着いて整理するための読みものです。</p>
+          <p className="lead">年齢や生活環境の変化によって、自然な出会いが少なく感じられる時期は珍しくありません。このコラムは、焦って結論を出すためではなく、いまの生活圏や気持ちを落ち着いて整理するためのコラムです。</p>
         </div>
       </section>
 
