@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: '迷った気持ちを整理する｜出会い方診断',
@@ -24,7 +25,10 @@ export default function FortunePage() {
         <div className="fortune-support-heading">
           <h2 id="fortune-support-title">迷った気持ちをもう少し整理したいときに</h2>
           <p className="lead">診断やコラムだけでは整理しきれないときは、外部の補助コンテンツを使う方法もあります。必要なものだけ、無理のない範囲で参考にしてください。</p>
-          <p className="notice">※一部、外部サービスへのリンクを含みます。</p>
+          <p className="notice">
+            ※一部、外部サービスへのリンクを含みます。外部リンクや広告掲載方針については、
+            <Link href="/advertising">広告・外部リンクについて</Link>をご確認ください。
+          </p>
         </div>
 
         <div className="fortune-support-grid">
