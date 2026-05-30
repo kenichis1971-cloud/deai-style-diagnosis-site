@@ -53,6 +53,17 @@ export default function BeforeStartingMatchingAppsPage() {
           <p>小さく見直しを重ねることが、無理のない出会い方につながっていきます。焦らず、自分のペースで進めていくことを大切にしてください。</p>
         </section>
 
+        <section className="section matching-apps-section" aria-labelledby="matching-apps-comparison-points-title">
+          <div className="matching-apps-heading">
+            <h2 id="matching-apps-comparison-points-title">マッチングアプリを選ぶ前に、比較ポイントも整理する</h2>
+            <p className="lead">アプリを使うか迷っている場合は、名前だけで選ぶよりも、目的・年齢層・料金・安全面などを先に確認しておくと安心です。</p>
+          </div>
+          <p>比較ページは現在準備中ですが、まずは選ぶ前に見ておきたいポイントを整理できます。</p>
+          <div className="btn-row">
+            <Link className="btn btn-secondary" href="/matching-apps">比較ポイントを見る</Link>
+          </div>
+        </section>
+
         <section className="section article-cta" aria-label="関連ページへのリンク">
           <h2>関連ページ</h2>
           <div className="btn-row">
