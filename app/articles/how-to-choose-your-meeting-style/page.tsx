@@ -1,4 +1,10 @@
+import type { Metadata } from 'next';
 import Link from 'next/link';
+
+export const metadata: Metadata = {
+  title: '出会い方に迷ったとき、自分に合う選び方｜出会い方コラム',
+  description: 'アプリ、紹介、コミュニティなどを比べながら、性格や生活リズムに合いやすい出会い方を整理するコラムです。',
+};
 
 export default function HowToChooseYourMeetingStylePage() {
   return (

@@ -1,4 +1,10 @@
+import type { Metadata } from 'next';
 import Link from 'next/link';
+
+export const metadata: Metadata = {
+  title: '自然な出会いが少ないと感じたときに考えたいこと｜出会い方コラム',
+  description: '自然な出会いが少なく感じるときに、生活圏や気持ちを見直しながら無理のない出会い方を考えるコラムです。',
+};
 
 export default function WhenNaturalMeetingsFeelRarePage() {
   return (

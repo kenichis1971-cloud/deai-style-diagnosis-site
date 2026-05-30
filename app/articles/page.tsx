@@ -1,4 +1,10 @@
+import type { Metadata } from 'next';
 import Link from 'next/link';
+
+export const metadata: Metadata = {
+  title: '出会い方コラム｜恋愛・婚活の選択肢をやさしく整理',
+  description: 'アプリ、紹介、自然な出会い、出会い疲れなど、出会い方に迷ったときの考え方をまとめたコラム一覧です。',
+};
 
 const drafts = [
   'アプリが不安なときに最初に整理したい3つの視点',
