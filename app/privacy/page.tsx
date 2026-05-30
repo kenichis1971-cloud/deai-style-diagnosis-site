@@ -1,3 +1,10 @@
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'プライバシーポリシー｜出会い方診断',
+  description: '出会い方診断サイトにおける個人情報やアクセス情報の取り扱いについて整理するページです。',
+};
+
 export default function PrivacyPage() {
   return (
     <section className="card">

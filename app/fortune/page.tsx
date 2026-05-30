@@ -1,3 +1,10 @@
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: '迷った気持ちを整理する｜出会い方診断',
+  description: '恋愛や婚活で迷ったときに、自分の気持ちを落ち着いて整理するための補助ページです。',
+};
+
 export default function FortunePage() {
   return (
     <>

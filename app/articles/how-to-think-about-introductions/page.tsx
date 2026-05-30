@@ -1,4 +1,10 @@
+import type { Metadata } from 'next';
 import Link from 'next/link';
+
+export const metadata: Metadata = {
+  title: '紹介で出会うときに無理をしない考え方｜出会い方コラム',
+  description: '友人や知人からの紹介について、安心感や気を遣いやすさを整理しながら無理のない向き合い方を考えるコラムです。',
+};
 
 export default function HowToThinkAboutIntroductionsPage() {
   return (

@@ -1,4 +1,10 @@
+import type { Metadata } from 'next';
 import Link from 'next/link';
+
+export const metadata: Metadata = {
+  title: '出会いに疲れたとき、少しペースを整える考え方｜出会い方コラム',
+  description: '出会い探しに疲れを感じたときに、自分の気持ちや連絡のペース、距離感をやさしく整えるためのコラムです。',
+};
 
 export default function WhenYouFeelTiredOfMeetingPeoplePage() {
   return (

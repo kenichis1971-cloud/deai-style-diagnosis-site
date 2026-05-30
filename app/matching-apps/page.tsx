@@ -1,3 +1,10 @@
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'マッチングアプリでの出会い方｜始める前に整理したいこと',
+  description: 'マッチングアプリを選択肢のひとつとして考える前に、目的や距離感、安全面を整理するページです。',
+};
+
 export default function MatchingAppsPage() {
   return (
     <>

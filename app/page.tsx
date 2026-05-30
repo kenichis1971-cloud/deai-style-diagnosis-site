@@ -1,4 +1,10 @@
+import type { Metadata } from 'next';
 import Link from 'next/link';
+
+export const metadata: Metadata = {
+  title: '出会い方診断｜自分に合う出会い方をやさしく整理',
+  description: '恋愛や婚活の出会い方に迷ったとき、自分の性格や生活リズムに合う選択肢を整理する診断サイトです。',
+};
 
 const options = [
   { title: 'マッチングアプリ', text: '忙しい中でも出会いの機会を持ちたい人向けの選択肢。' },

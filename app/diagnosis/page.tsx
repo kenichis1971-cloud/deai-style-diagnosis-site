@@ -1,4 +1,10 @@
+import type { Metadata } from "next";
 import DeaiDiagnosisClient from "@/components/DeaiDiagnosisClient";
+
+export const metadata: Metadata = {
+  title: "あなたに合う出会い方診断｜出会い方を整理する10問診断",
+  description: "10問の質問を通して、今の自分に合いやすい出会い方の傾向をやさしく整理します。",
+};
 
 export default function DiagnosisPage() {
   return (

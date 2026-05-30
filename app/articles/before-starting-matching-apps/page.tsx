@@ -1,4 +1,10 @@
+import type { Metadata } from 'next';
 import Link from 'next/link';
+
+export const metadata: Metadata = {
+  title: 'マッチングアプリを始める前に整理したいこと｜出会い方コラム',
+  description: 'アプリを使う前に、目的や距離感、安全面をやさしく整理するためのコラムです。',
+};
 
 export default function BeforeStartingMatchingAppsPage() {
   return (
