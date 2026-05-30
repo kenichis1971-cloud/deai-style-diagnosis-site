@@ -59,12 +59,20 @@ export default function WhenYouFeelTiredOfMeetingPeoplePage() {
           <p>出会いは、急いで答えを出すものではありません。疲れたときほど、いまの自分の気持ちに合わせて、少しずつ整えていきましょう。</p>
         </section>
 
+        <section className="section card" aria-labelledby="article-fortune-link-title">
+          <h2 id="article-fortune-link-title">気持ちをもう少し整理したいときは</h2>
+          <p>出会いに疲れているときは、すぐに次の行動を決めなくても大丈夫です。今の気持ちを言葉にして、少し落ち着いて整理する時間を取ることも選択肢のひとつです。</p>
+          <p>気持ち整理ページでは、恋愛や出会い方に迷ったときの考え方をやさしく整理しています。</p>
+          <div className="btn-row">
+            <Link className="btn btn-secondary" href="/fortune">気持ち整理ページを見る</Link>
+          </div>
+        </section>
+
         <section className="section article-cta" aria-label="関連ページへのリンク">
           <h2>関連ページ</h2>
           <div className="btn-row">
             <Link className="btn btn-primary" href="/diagnosis">診断で自分に合う出会い方を見直す</Link>
             <Link className="btn btn-secondary" href="/articles">出会い方コラム一覧へ戻る</Link>
-            <Link className="btn btn-secondary" href="/fortune">迷った気持ちを整理する</Link>
           </div>
         </section>
       </article>
