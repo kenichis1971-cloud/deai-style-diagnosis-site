@@ -192,3 +192,64 @@
 * 診断結果を根拠に「あなたはこれを使うべき」と言わない。
 * 「選択肢のひとつ」「必要に応じて」「気持ちを整理する補助」という表現にする。
 * 追加後は、内部リンク・外部リンク・sitemap・metadata に影響がないか確認する。
+
+## 現在の実装済み導線
+
+* /fortune に占い鑑定販売への外部リンクを設置済み。
+
+  * STORESリンク： https://fortuneteller-lucia.stores.jp
+  * 外部リンクとして target="_blank" と rel="noopener noreferrer" を付与済み。
+* /fortune にブログへの外部リンクを設置済み。
+
+  * ブログリンク： https://netonan-kiwami.xyz/
+  * 外部リンクとして target="_blank" と rel="noopener noreferrer" を付与済み。
+* /fortune の note はURL未確定のため「準備中」のまま。
+* /fortune の外部リンク注意書きから /advertising へ内部リンク済み。
+* /advertising に広告・外部リンク・PR表記方針を整備済み。
+* /matching-apps に比較ポイント、登録前チェックリスト、比較ページ準備中枠を追加済み。
+* /articles/before-starting-matching-apps から /matching-apps への内部導線を追加済み。
+* /articles/when-you-feel-tired-of-meeting-people から /fortune への内部導線を追加済み。
+* 電話占い、マッチングアプリ、結婚相談所アフィリエイトリンクは未追加。
+
+## 次にマッチングアプリASPリンクを追加するときの方針
+
+### 追加候補ページ
+
+* /matching-apps
+* /articles/before-starting-matching-apps
+* 診断結果の matching_app / marriage_app タイプ付近
+
+### 優先順位
+
+1. まず /matching-apps にPR表記付きの比較導線を追加する。
+2. 次に /articles/before-starting-matching-apps の末尾CTAから /matching-apps へ誘導する流れを維持する。
+3. 最後に診断結果の matching_app / marriage_app タイプから、直接外部リンクではなく、まず /matching-apps へつなぐ形を検討する。
+
+### 表現方針
+
+* 「おすすめNo.1」「必ず出会える」「恋人ができる」「成功する」などの断定表現は使わない。
+* ランキング形式よりも、目的・年齢層・真剣度・料金・安全面・使いやすさの比較軸で整理する。
+* 特定サービスを強く推しすぎず、「選択肢のひとつ」として案内する。
+* 登録を急がせる表現は避ける。
+* 利用前に公式情報、料金、本人確認、安全面を確認するよう促す。
+
+### 実装時の注意
+
+* 外部リンクには target="_blank" と rel="noopener noreferrer" を必ず付ける。
+* PR表記または広告リンクを含む旨を、導線付近に分かりやすく表示する。
+* /advertising への内部リンクを近くに置く。
+* いきなり複数ASPリンクを大量に入れず、最初は少数の導線から確認する。
+* 外部URLを入れた後は、内部リンク・外部リンク・スマホ表示・ビルド確認を行う。
+* sitemap / robots / metadataBase / Google verification は原則変更しない。
+* 診断ロジックは変更しない。
+
+### 実装後の確認項目
+
+* /matching-apps が表示崩れしていない。
+* PR表記が目立ちすぎず、でも見落とされにくい。
+* 外部リンクに target="_blank" と rel="noopener noreferrer" が付いている。
+* /advertising への内部リンクがある。
+* /articles/before-starting-matching-apps から /matching-apps への流れが維持されている。
+* 診断結果からの導線が強すぎない。
+* スマホ表示でカードやボタンが押しやすい。
+* npm run lint / npx tsc --noEmit / npm run build が成功する。
