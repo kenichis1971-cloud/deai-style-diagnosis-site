@@ -42,6 +42,14 @@ a { color: inherit; text-decoration: none; }
   padding: clamp(42px, 8vw, 98px) 0;
 }
 
+.home-hero {
+  background-image:
+    linear-gradient(120deg, rgba(255, 251, 249, 0.88) 0%, rgba(255, 246, 244, 0.68) 48%, rgba(249, 224, 225, 0.5) 100%),
+    url("/images/heroes/home-hero-pc.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
 .diagnosis-hero {
   background-image:
     linear-gradient(120deg, rgba(255, 251, 249, 0.92), rgba(249, 224, 225, 0.78)),
@@ -95,6 +103,12 @@ a { color: inherit; text-decoration: none; }
 .notice { font-size:13px; color:var(--muted); margin-top:10px; }
 @media (max-width: 640px){
   .hero { min-height: 290px; }
+  .home-hero {
+    background-image:
+      linear-gradient(180deg, rgba(255, 251, 249, 0.9) 0%, rgba(255, 246, 244, 0.72) 52%, rgba(249, 224, 225, 0.58) 100%),
+      url("/images/heroes/home-hero-sp.jpg");
+    background-position: center;
+  }
   .hero-inner { padding: 38px 0 48px; }
   .header-inner { align-items:flex-start; flex-direction:column; }
 }

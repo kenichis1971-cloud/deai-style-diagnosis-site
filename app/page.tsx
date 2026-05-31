@@ -16,7 +16,7 @@ const options = [
 export default function HomePage() {
   return (
     <>
-      <section className="hero" aria-labelledby="top-hero-title">
+      <section className="hero home-hero" aria-labelledby="top-hero-title">
         <div className="hero-inner">
           <h1 id="top-hero-title">あなたに合う出会い方診断</h1>
           <p className="lead">「どこで出会えばいいか分からない」「アプリが向いているか不安」などの気持ちを、質問形式で整理するためのサイトです。未来を断定するのではなく、あなたの傾向に合った選択肢を見つける補助として活用できます。</p>
