@@ -1,6 +1,33 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 
+const supportCards = [
+  {
+    mark: '鑑',
+    label: '占い鑑定',
+    title: '占い鑑定で気持ちを整理する',
+    description: '恋愛や出会い方で迷ったときに、今の気持ちを言葉にするための補助として鑑定を利用できます。',
+    href: 'https://fortuneteller-lucia.stores.jp',
+    cta: '鑑定メニューを見る',
+  },
+  {
+    mark: '文',
+    label: 'ブログ',
+    title: 'ブログで関連記事を読む',
+    description: '恋愛や出会い方について、もう少し広く考えたいときの参考としてブログ記事を読むこともできます。',
+    href: 'https://netonan-kiwami.xyz/',
+    cta: 'ブログを見る',
+  },
+  {
+    mark: '準',
+    label: 'note',
+    title: 'noteでじっくり整理する',
+    description: '出会い方や気持ちの整理に役立つ内容を、今後noteでも用意していく予定です。',
+    status: '準備中',
+    muted: true,
+  },
+];
+
 export const metadata: Metadata = {
   title: '迷った気持ちを整理する｜出会い方診断',
   description: '恋愛や婚活で迷ったときに、自分の気持ちを落ち着いて整理するための補助ページです。',
@@ -32,46 +59,33 @@ export default function FortunePage() {
         </div>
 
         <div className="fortune-support-grid">
-          <article className="card fortune-support-card">
-            <div>
-              <p className="fortune-support-label">占い鑑定</p>
-              <h3>占い鑑定で気持ちを整理する</h3>
-              <p>恋愛や出会い方で迷ったときに、今の気持ちを言葉にするための補助として鑑定を利用できます。</p>
-            </div>
-            <a
-              className="fortune-support-link"
-              href="https://fortuneteller-lucia.stores.jp"
-              target="_blank"
-              rel="noopener noreferrer"
+          {supportCards.map((card) => (
+            <article
+              className={`card fortune-support-card${card.muted ? ' fortune-support-card-muted' : ''}`}
+              key={card.label}
             >
-              鑑定メニューを見る
-            </a>
-          </article>
-
-          <article className="card fortune-support-card">
-            <div>
-              <p className="fortune-support-label">ブログ</p>
-              <h3>ブログで関連記事を読む</h3>
-              <p>恋愛や出会い方について、もう少し広く考えたいときの参考としてブログ記事を読むこともできます。</p>
-            </div>
-            <a
-              className="fortune-support-link"
-              href="https://netonan-kiwami.xyz/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              ブログを見る
-            </a>
-          </article>
-
-          <article className="card fortune-support-card fortune-support-card-muted">
-            <div>
-              <p className="fortune-support-label">note</p>
-              <h3>noteでじっくり整理する</h3>
-              <p>出会い方や気持ちの整理に役立つ内容を、今後noteでも用意していく予定です。</p>
-            </div>
-            <span className="fortune-support-status" aria-label="noteは準備中です">準備中</span>
-          </article>
+              <div>
+                <div className="fortune-card-header">
+                  <span className="fortune-card-icon" aria-hidden="true">{card.mark}</span>
+                  <p className="fortune-support-label">{card.label}</p>
+                </div>
+                <h3>{card.title}</h3>
+                <p>{card.description}</p>
+              </div>
+              {card.href ? (
+                <a
+                  className="fortune-support-link"
+                  href={card.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {card.cta}
+                </a>
+              ) : (
+                <span className="fortune-support-status" aria-label="noteは準備中です">{card.status}</span>
+              )}
+            </article>
+          ))}
         </div>
       </section>
     </>
