@@ -9,26 +9,32 @@ const comparisonPoints = [
   {
     title: '利用目的',
     description: '恋活・婚活・友達づくりなど、目的に合うか',
+    mark: 'GO',
   },
   {
     title: '年齢層',
     description: '自分の年代と合いやすいか',
+    mark: '層',
   },
   {
     title: '真剣度',
     description: '気軽さと真剣さのバランス',
+    mark: '温',
   },
   {
     title: '料金',
     description: '無料範囲・有料機能・継続費用',
+    mark: '¥',
   },
   {
     title: '安全面',
     description: '本人確認・通報機能・ブロック機能',
+    mark: 'OK',
   },
   {
     title: '使いやすさ',
     description: '検索、メッセージ、プロフィール作成のしやすさ',
+    mark: 'UI',
   },
 ];
 
@@ -65,7 +71,12 @@ export default function MatchingAppsPage() {
         <div className="matching-apps-grid">
           {comparisonPoints.map((point) => (
             <article className="card matching-apps-point-card" key={point.title}>
-              <p className="matching-apps-card-label">比較ポイント</p>
+              <div className="matching-apps-point-header">
+                <span className="matching-apps-point-icon" aria-hidden="true">
+                  {point.mark}
+                </span>
+                <p className="matching-apps-card-label">比較ポイント</p>
+              </div>
               <h3>{point.title}</h3>
               <p>{point.description}</p>
             </article>
