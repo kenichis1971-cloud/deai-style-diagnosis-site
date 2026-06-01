@@ -148,7 +148,7 @@ a { color: inherit; text-decoration: none; }
 .footer-links { display:flex; flex-wrap:wrap; gap:12px; color:var(--muted); font-size:14px; }
 .notice { font-size:13px; color:var(--muted); margin-top:10px; }
 @media (max-width: 768px){
-  .hero { min-height: 290px; }
+  .hero { min-height: clamp(460px, 118vw, 620px); }
   .home-hero {
     background-image:
       linear-gradient(160deg, rgba(255, 251, 249, 0.96) 0%, rgba(255, 248, 246, 0.84) 46%, rgba(255, 246, 244, 0.48) 72%, rgba(249, 224, 225, 0.22) 100%),
@@ -175,7 +175,7 @@ a { color: inherit; text-decoration: none; }
       linear-gradient(160deg, rgba(255, 252, 250, 0.97) 0%, rgba(255, 249, 248, 0.88) 48%, rgba(251, 247, 255, 0.54) 74%, rgba(241, 232, 251, 0.26) 100%),
       url("/images/heroes/fortune-hero-sp.jpg");
   }
-  .hero-inner { padding: 38px 0 48px; }
+  .hero-inner { padding: 48px 0 56px; }
   .article-list-card { min-height: auto; padding: 16px; }
   .article-card-header { margin-bottom: 10px; }
   .header-inner { align-items:flex-start; flex-direction:column; }
